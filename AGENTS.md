@@ -1,0 +1,3 @@
+# Development instructions
+
+Use Delphi 11.3 Alexandria, Object Pascal, Win32 initially. No external dependencies. Keep console UI separate from device access units. Phase 1 is read-only: enumerate floppy devices, query geometry and media types, investigate UFI READ FORMAT CAPACITIES via supported Windows APIs. Report actual Win32 errors and sense data; do not assume SCSI pass-through works on CBI. Never issue format or write commands in phase 1. Require explicit target validation and confirmation before future destructive operations. Document real hardware test results separately from hypotheses. Do not claim compilation or hardware tests unless performed.
