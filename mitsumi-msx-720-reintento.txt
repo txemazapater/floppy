@@ -1,0 +1,109 @@
+﻿Floppy phase 1 | 2026-11-25 18:32:48 local | diagnose A:
+DOS target: \Device\Floppy0
+Physical interface: \\?\usbstor#sfloppy&ven_mitsumi&prod_usb_ufdd_061m&rev_0.00#6&7215c0a&2#{53f56311-b6bf-11d0-94f2-00a0c91efb8b}
+PnP instance: USBSTOR\SFLOPPY&VEN_MITSUMI&PROD_USB_UFDD_061M&REV_0.00\6&7215C0A&2
+USB ancestor: USB\VID_03EE&PID_6901\5&930D636&0&12
+Storage device type=7 number=0 partition=0
+IOCTL_STORAGE_QUERY_PROPERTY (device): OK, bus=7
+Vendor: MITSUMI
+Product: USB UFDD 061M
+Revision: 0.00
+Serial: 
+Storage device descriptor (105 bytes)
+  0000: 28 00 00 00 69 00 00 00 00 00 01 00 48 00 00 00
+  0010: 51 00 00 00 62 00 00 00 67 00 00 00 07 00 00 00
+  0020: 24 00 00 00 00 80 00 01 1F 00 00 00 4D 49 54 53
+  0030: 55 4D 49 20 55 53 42 20 55 46 44 44 20 30 36 31
+  0040: 4D 00 00 00 30 2E 30 30 4D 49 54 53 55 4D 49 20
+  0050: 00 55 53 42 20 55 46 44 44 20 30 36 31 4D 00 00
+  0060: 00 00 30 2E 30 30 00 1F 00
+Inserted medium
+IOCTL_DISK_GET_DRIVE_GEOMETRY: OK
+  MediaType=2 (F3_1Pt44_512), cylinders=80, tracks/cylinder=2, sectors/track=18, bytes/sector=512
+  Calculated capacity: 1474560 bytes
+IOCTL_DISK_GET_DRIVE_GEOMETRY_EX: Win32 50 (0x00000032) Solicitud no compatible
+Driver-declared media geometries
+IOCTL_DISK_GET_MEDIA_TYPES: OK, 3 geometries
+  MediaType=17 (F3_1Pt2_512), cylinders=80, tracks/cylinder=2, sectors/track=15, bytes/sector=512
+  Calculated capacity: 1228800 bytes
+  MediaType=18 (F3_1Pt23_1024), cylinders=77, tracks/cylinder=2, sectors/track=8, bytes/sector=1024
+  Calculated capacity: 1261568 bytes
+  MediaType=2 (F3_1Pt44_512), cylinders=80, tracks/cylinder=2, sectors/track=18, bytes/sector=512
+  Calculated capacity: 1474560 bytes
+Storage adapter alignment mask: 0x0
+TEST UNIT READY / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+REQUEST SENSE / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+Data in (18 bytes)
+  0000: 70 00 00 00 00 00 00 0A 00 00 00 00 00 00 00 00
+  0010: 00 00
+Sense Key=0x00
+ASC=0x00 ASCQ=0x00
+INQUIRY / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+Data in (36 bytes)
+  0000: 00 80 00 01 1F 00 00 00 4D 49 54 53 55 4D 49 20
+  0010: 55 53 42 20 55 46 44 44 20 30 36 31 4D 00 00 00
+  0020: 30 2E 30 30
+Peripheral type=0 removable=1
+Vendor: MITSUMI
+Product: USB UFDD 061M...
+Revision: 0.00
+READ FORMAT CAPACITIES / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+READ FORMAT CAPACITIES transfer: requested=260, reported=4, IOCTL bytes=80
+Data in (4 bytes)
+  0000: 00 00 00 20
+READ FORMAT CAPACITIES: retrying with exactly 36 bytes (IOCTL_SCSI_PASS_THROUGH)
+READ FORMAT CAPACITIES / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+READ FORMAT CAPACITIES transfer: requested=36, reported=36, IOCTL bytes=112
+Data in (36 bytes)
+  0000: 00 00 00 20 00 00 0B 40 02 00 02 00 00 00 09 60
+  0010: 00 00 02 00 00 00 04 D0 00 00 04 00 00 00 0B 40
+  0020: 00 00 02 00
+Capacity list length: 32 bytes
+Current formatted medium (code 2): 2880 blocks x 512 bytes = 1474560 bytes
+Formattable capacity: 2400 blocks x 512 bytes = 1228800 bytes
+Formattable capacity: 1232 blocks x 1024 bytes = 1261568 bytes
+Formattable capacity: 2880 blocks x 512 bytes = 1474560 bytes
+720 KB (1440 x 512) among formattable descriptors: not listed
+1.44 MB (2880 x 512) among formattable descriptors: listed
+READ CAPACITY (10) / IOCTL_SCSI_PASS_THROUGH: transport OK, SCSI status=0x00
+Data in (8 bytes)
+  0000: 00 00 0B 3F 00 00 02 00
+Current logical capacity: last LBA=2879, 2880 blocks x 512 bytes = 1474560 bytes
+TEST UNIT READY / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+REQUEST SENSE / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+Data in (18 bytes)
+  0000: 70 00 00 00 00 00 00 0A 00 00 00 00 00 00 00 00
+  0010: 00 00
+Sense Key=0x00
+ASC=0x00 ASCQ=0x00
+INQUIRY / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+Data in (36 bytes)
+  0000: 00 80 00 01 1F 00 00 00 4D 49 54 53 55 4D 49 20
+  0010: 55 53 42 20 55 46 44 44 20 30 36 31 4D 00 00 00
+  0020: 30 2E 30 30
+Peripheral type=0 removable=1
+Vendor: MITSUMI
+Product: USB UFDD 061M...
+Revision: 0.00
+READ FORMAT CAPACITIES / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+READ FORMAT CAPACITIES transfer: requested=260, reported=4, IOCTL bytes=44
+Data in (4 bytes)
+  0000: 00 00 00 20
+READ FORMAT CAPACITIES: retrying with exactly 36 bytes (IOCTL_SCSI_PASS_THROUGH_DIRECT)
+READ FORMAT CAPACITIES / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+READ FORMAT CAPACITIES transfer: requested=36, reported=36, IOCTL bytes=44
+Data in (36 bytes)
+  0000: 00 00 00 20 00 00 0B 40 02 00 02 00 00 00 09 60
+  0010: 00 00 02 00 00 00 04 D0 00 00 04 00 00 00 0B 40
+  0020: 00 00 02 00
+Capacity list length: 32 bytes
+Current formatted medium (code 2): 2880 blocks x 512 bytes = 1474560 bytes
+Formattable capacity: 2400 blocks x 512 bytes = 1228800 bytes
+Formattable capacity: 1232 blocks x 1024 bytes = 1261568 bytes
+Formattable capacity: 2880 blocks x 512 bytes = 1474560 bytes
+720 KB (1440 x 512) among formattable descriptors: not listed
+1.44 MB (2880 x 512) among formattable descriptors: listed
+READ CAPACITY (10) / IOCTL_SCSI_PASS_THROUGH_DIRECT: transport OK, SCSI status=0x00
+Data in (8 bytes)
+  0000: 00 00 0B 3F 00 00 02 00
+Current logical capacity: last LBA=2879, 2880 blocks x 512 bytes = 1474560 bytes

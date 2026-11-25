@@ -3,9 +3,9 @@ program Floppy;
 {$APPTYPE CONSOLE}
 
 uses
-  System.SysUtils;
+  System.SysUtils,
+  FloppyConsole in 'FloppyConsole.pas';
 
 begin
-  Writeln('Floppy - diagnostic utility');
-  Writeln('Phase 1: read-only diagnostics (not yet implemented).');
+  ExitCode := RunConsole;
 end.
